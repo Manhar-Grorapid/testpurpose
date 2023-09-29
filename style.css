@@ -43,8 +43,21 @@ body {
     border: 0;
 }
 
+.watch-btn a {
+    text-decoration: none;
+    color: #ffffff;
+}
+
 #study .infographic {
+    border: 1.5px solid #243A5E;
+    border-top: 2px solid #243A5E;
+}
+
+
+#study .infographic a {
+    text-decoration: none;
     cursor: pointer;
+    color: #243A5E;
 }
 
 #transform .container .row .col-md-3 button {
@@ -90,12 +103,10 @@ body {
     text-decoration: underline;
 }
 
-/* Style the anchor links */
 .nav-link {
     text-decoration: none;
 }
 
-/* Add the underline effect on :active and :focus states */
 .nav-link:active,
 .nav-link:focus {
     border-bottom: 4px solid #0067b8;
