@@ -3,52 +3,12 @@
 
 <head runat="server">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;500&display=swap" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="https://rapidstore.s3.amazonaws.com/assets/plugin_theme.css">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <link rel="stylesheet" href="style.css">
     <script src="js/bootstrap.min.js"></script>
-    <link rel="stylesheet" href="styles.css" />
     <title>Microsoft – Cloud, Computers, Apps & Gaming</title>
-    <style>
-        body {
-            font-family: 'Open Sans', sans-serif;
-        }
-
-        .acq-cust {
-            text-decoration: none;
-            color: #000000;
-        }
-
-        .acq-cust:hover {
-            border-bottom: 5px solid #0067B8;
-            border-radius: 4px;
-            color: #000000;
-            transition: 0.2s;
-        }
-
-        #acquire-customers-section .container .row p a {
-            text-decoration: none;
-        }
-
-        #transform .container .row .col-md-3 button {
-            background-color: #89C402;
-            padding: 0.5rem 1rem;
-            border: 0;
-            color: #000000;
-        }
-
-        #mic-inspire .container .row .col-md-6 .watch-btn {
-            background-color: #0078D4;
-            padding: 0.5rem 1rem;
-            border: 0;
-        }
-
-        #study .infographic {
-            cursor: pointer;
-        }
-    </style>
 
 </head>
 
@@ -64,10 +24,10 @@
                     <span class="navbar-toggler-icon"></span>
                 </button>
 
-                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <div class="collapse navbar-collapse mx-3 justify-content-end" id="navbarSupportedContent">
                     <ul class="navbar-nav mb-2 mt-2 mt-lg-1 mx-lg-5 mx-3 pt-2">
                         <li class="nav-item">
-                            <a class="nav-link" aria-current="page" href="#">DCO University</a>
+                            <a class="nav-link" aria-current="page" href="./blogList.html">DCO University</a>
                         </li>
                         <li class="nav-item">
                             <a class="nav-link" aria-current="page" href="#">Azure Rapid Assessment
@@ -77,6 +37,7 @@
                             <a class="nav-link" aria-current="page" href="#">Meet the team</a>
                         </li>
                     </ul>
+                    <button class="watch-btn text-white mx-5">Get In Touch</button>
                 </div>
             </div>
         </nav>
@@ -88,6 +49,7 @@
                 <p class="text-white px-4 px-md-3 py-0">Accelerate your cloud services journey and unlock
                     exceptional<br />
                     customer outcomes on Azure</p>
+                <button class="watch-btn text-white mx-3 my-2">Learn More</button>
             </div>
         </div>
     </section>
@@ -97,9 +59,9 @@
         <div class="container">
             <div class="row mx-4">
                 <div class="col-md-6 mt-5 px-0 mb-3 mb-md-0">
-                    <h3 class="fw-bold">Get the expertise and resources you
+                    <h2 class="fw-bold">Get the expertise and resources you<br />
                         need for your cloud journey
-                    </h3>
+                    </h2>
                 </div>
                 <div class="col-md-6 p-0">
                     <p>
@@ -147,7 +109,7 @@
                         with moving to the cloud</p>
                 </div>
                 <div class="col-lg-3">
-                    <img src="images/round-dollar.png" style="height: 60px; width: 60px;" class="mt-4 mb-3"
+                    <img src="images/aeroplane-img.png" style="height: 60px; width: 60px;" class="mt-4 mb-3"
                         alt="technical-img" />
                     <h6 class="fw-bold mb-3">Reduced technical debt</h6>
                     <p>
@@ -166,116 +128,275 @@
             <p class="text-center px-4">Tools, resources, and support to acquire customers, accelerate migrations,
                 and launch new offerings</p>
         </div>
-        <div class="customer-acq-tab d-none justify-content-center d-md-flex d-md-flex ">
+        <!-- <div class="customer-acq-tab d-none justify-content-center d-md-flex d-md-flex ">
             <h6 class="text-black-50"><a href="#" class="acq-cust mx-3 fw-bold">Acquire customers</a></h6>
             <h6 class="text-black-50"><a href="#" class="acq-cust mx-3 fw-bold">Quote and design</a></h6>
             <h6 class="text-black-50"><a href="#" class="acq-cust mx-3 fw-bold">Deploy, run, and optimize</a></h6>
-        </div>
+        </div> -->
     </section>
 
+    <section id="acquire-customers-section" class="mb-5">
+        <div class="container">
+            <nav>
+                <div class="nav customer-acq-tab d-none justify-content-center d-md-flex d-md-flex" id="nav-tab"
+                    role="tablist">
+                    <button class="nav-link active" id="nav-home-tab" data-bs-toggle="tab" data-bs-target="#nav-home"
+                        type="button" role="tab" aria-controls="nav-home" aria-selected="true">Acquire
+                        customers</button>
+                    <button class="nav-link" id="nav-profile-tab" data-bs-toggle="tab" data-bs-target="#nav-profile"
+                        type="button" role="tab" aria-controls="nav-profile" aria-selected="false">
+                        Quote and design
+                    </button>
+                    <button class="nav-link" id="nav-contact-tab" data-bs-toggle="tab" data-bs-target="#nav-contact"
+                        type="button" role="tab" aria-controls="nav-contact" aria-selected="false">Deploy, run, and
+                        optimize</button>
+                </div>
+            </nav>
 
-    <section id="acquire-customers-section">
-        <hr class="featurette-divider mx-auto my-0" style="width: 90%;" />
-        <div class="container mt-5 pb-md-3">
-            <div class="row mx-3 mx-md-3">
-                <div class="col-md-6 mb-3">
-                    <img src="images/cloud-img.png" style="height: 60px; width: 60px;" class="mb-3" alt="cloud-img" />
-                    <h5 class="fw-bold">Cloud Ascent</h5>
-                    <p class="mb-0">
-                        Identify customers with the most likelihood to purchase Microsoft products
-                        with an AI
-                        and
-                        ML-driven propensity modeling tool
-                    </p>
-                    <p class="mt-2">
-                        <a href="#" class="fw-bold">Learn more
-                            <img src="images/vector.png" alt="right-arrow-img"
-                                style="width: 8.5px; height: 10px;" /></a>
-                    </p>
+            <hr class="featurette-divider mx-auto my-0" style="width: 90%;" />
+
+            <div class="tab-content" id="nav-tabContent">
+                <div class="tab-pane fade show active" id="nav-home" role="tabpanel" aria-labelledby="nav-home-tab">
+                    <div class="container mt-5 pb-md-3">
+                        <div class="row mx-3 mx-md-3">
+                            <div class="col-md-6 mb-3 px-0">
+                                <img src="images/cloud-img.png" style="height: 60px; width: 60px;" class="mb-3"
+                                    alt="cloud-img" />
+                                <h5 class="fw-bold">Cloud Ascent</h5>
+                                <p class="mb-0">
+                                    Identify customers with the most likelihood to purchase Microsoft products
+                                    with an AI
+                                    and
+                                    ML-driven propensity modeling tool
+                                </p>
+                                <p class="mt-2">
+                                    <a href="#" class="fw-bold text-decoration-none">Learn more
+                                        <img src="images/vector.png" alt="right-arrow-img"
+                                            style="width: 8.5px; height: 10px;" /></a>
+                                </p>
+                            </div>
+                            <div class="col-md-6 mb-3 px-0">
+                                <img src="images/tick-img.png" style="height: 60px; width: 60px;" class="mb-3"
+                                    alt="tick-img" />
+                                <h5 class="fw-bold">Referrals from Microsoft</h5>
+                                <p class="mb-0">
+                                    Share your capabilities and manage referrals through a trusted, transparent,
+                                    simple,
+                                    and
+                                    responsive process
+                                </p>
+                            </div>
+                            <div class="col-md-6 px-0">
+                                <img src="images/video-img.png" style="height: 60px; width: 60px;" class="mb-3"
+                                    alt="video-img" />
+                                <h5 class="fw-bold">Digital Marketing Content OnDemand</h5>
+                                <p class="mb-0">
+                                    Automatically stream campaign content and start capturing and closing marketing
+                                    qualified
+                                    leads through increased demand generation activities
+                                </p>
+                                <p class="mt-2">
+                                    <a href="#" class="fw-bold text-decoration-none">Get started
+                                        <img src="images/vector.png" alt="right-arrow-img"
+                                            style="width: 8.5px; height: 10px;" /></a>
+                                </p>
+                            </div>
+                            <div class="col-md-6 px-0">
+                                <img src="images/image.png" style="height: 60px; width: 60px;" class="mb-3"
+                                    alt="photo-img" />
+                                <h5 class="fw-bold">Partner Marketing Center</h5>
+                                <p class="mb-0">
+                                    Access customizable marketing, sales, and readiness content and materials such as
+                                    pitch
+                                    decks, playbooks, copy blocks, email templates, videos, and more.
+                                </p>
+                                <p class="mt-2">
+                                    <a href="#" class="fw-bold text-decoration-none">Get started
+                                        <img src="images/vector.png" alt="right-arrow-img"
+                                            style="width: 8.5px; height: 10px;" /></a>
+                                </p>
+                            </div>
+                        </div>
+                    </div>
                 </div>
-                <div class="col-md-6 mb-3">
-                    <img src="images/tick-img.png" style="height: 60px; width: 60px;" class="mb-3" alt="tick-img" />
-                    <h5 class="fw-bold">Referrals from Microsoft</h5>
-                    <p class="mb-0">
-                        Share your capabilities and manage referrals through a trusted, transparent,
-                        simple,
-                        and
-                        responsive process
-                    </p>
+
+                <div class="tab-pane fade" id="nav-profile" role="tabpanel" aria-labelledby="nav-profile-tab">
+                    <div class="container mt-5 pb-md-3">
+                        <div class="row mx-3 mx-md-3">
+                            <div class="col-md-6 mb-3 px-0">
+                                <img src="images/win-img.png" style="height: 60px; width: 60px;" class="mb-3"
+                                    alt="cloud-img" />
+                                <h5 class="fw-bold">Azure Migrate</h5>
+                                <p class="mb-0">Discover and assess on-premises resources to gather technical and
+                                    business
+                                    insights into
+                                    infrastructure, databases, and applications</p>
+                                <p class="mt-2">
+                                    <a href="#" class="fw-bold text-decoration-none">Learn more
+                                        <img src="images/vector.png" alt="right-arrow-img"
+                                            style="width: 8.5px; height: 10px;" /></a>
+                                </p>
+                            </div>
+                            <div class="col-md-6 mb-3 px-0">
+                                <img src="images/chat-img.png" style="height: 60px; width: 60px;" class="mb-3"
+                                    alt="tick-img" />
+                                <h5 class="fw-bold">Azure Rapid Assessment Estimator</h5>
+                                <p class="mb-0">Quickly identify Azure IaaS and/or Azure PaaS services for your existing
+                                    infrastructure
+                                    and workloads with similar or even better capabilities</p>
+                            </div>
+                            <div class="col-md-6 px-0">
+                                <img src="images/video-img.png" style="height: 60px; width: 60px;" class="mb-3"
+                                    alt="video-img" />
+                                <h5 class="fw-bold">Digital Marketing Content OnDemand</h5>
+                                <p class="mb-0">Get technology and strategy guidance on your strategic or large deals
+                                    and
+                                    opportunities
+                                </p>
+                            </div>
+                            <div class="col-md-6 px-0">
+                                <img src="images/heart-img.png" style="height: 60px; width: 60px;" class="mb-3"
+                                    alt="photo-img" />
+                                <h5 class="fw-bold">Best practice guidance</h5>
+                                <p class="mb-0">Take advantage of our team to help you quickly implement best practices
+                                    and
+                                    proven
+                                    guidance when moving to Azure</p>
+                            </div>
+                        </div>
+                    </div>
                 </div>
-                <div class="col-md-6">
-                    <img src="images/video-img.png" style="height: 60px; width: 60px;" class="mb-3" alt="video-img" />
-                    <h5 class="fw-bold">Digital Marketing Content OnDemand</h5>
-                    <p class="mb-0">
-                        Automatically stream campaign content and start capturing and closing marketing
-                        qualified
-                        leads through increased demand generation activities
-                    </p>
-                    <p class="mt-2">
-                        <a href="#" class="fw-bold">Get started
-                            <img src="images/vector.png" alt="right-arrow-img"
-                                style="width: 8.5px; height: 10px;" /></a>
-                    </p>
-                </div>
-                <div class="col-md-6">
-                    <img src="images/image.png" style="height: 60px; width: 60px;" class="mb-3" alt="photo-img" />
-                    <h5 class="fw-bold">Partner Marketing Center</h5>
-                    <p class="mb-0">
-                        Access customizable marketing, sales, and readiness content and materials such as
-                        pitch
-                        decks, playbooks, copy blocks, email templates, videos, and more.
-                    </p>
-                    <p class="mt-2">
-                        <a href="#" class="fw-bold">Get started
-                            <img src="images/vector.png" alt="right-arrow-img"
-                                style="width: 8.5px; height: 10px;" /></a>
-                    </p>
+
+                <div class="tab-pane fade" id="nav-contact" role="tabpanel" aria-labelledby="nav-contact-tab">
+                    <div class="container mt-5 pb-md-3">
+                        <div class="row mx-3 mx-md-3">
+                            <div class="col-md-6 mb-3 px-0">
+                                <img src="images/win-img.png" style="height: 60px; width: 60px;" class="mb-3"
+                                    alt="cloud-img" />
+                                <h5 class="fw-bold">Azure Advisor</h5>
+                                <p class="mb-0">Get actionable recommendations to help you optimize Azure resources for
+                                    reliability,
+                                    security, operational excellence, performance, and cost</p>
+                                <p class="mt-2">
+                                    <a href="#" class="fw-bold text-decoration-none">Learn more
+                                        <img src="images/vector.png" alt="right-arrow-img"
+                                            style="width: 8.5px; height: 10px;" /></a>
+                                </p>
+                            </div>
+                            <div class="col-md-6 mb-3 px-0">
+                                <img src="images/dollar-gear-img.png" style="height: 60px; width: 60px;" class="mb-3"
+                                    alt="tick-img" />
+                                <h5 class="fw-bold">Offers & incentives</h5>
+                                <p class="mb-0">Maximize your earning opportunity for accelerating Azure consumption
+                                    with a
+                                    tailored
+                                    incentive plan</p>
+                                <p class="mt-2">
+                                    <a href="#" class="fw-bold text-decoration-none">Contact us to learn more
+                                        <img src="images/vector.png" alt="right-arrow-img"
+                                            style="width: 8.5px; height: 10px;" /></a>
+                                </p>
+                            </div>
+                            <div class="col-md-6 px-0">
+                                <img src="images/gear-img.png" style="height: 60px; width: 60px;" class="mb-3"
+                                    alt="video-img" />
+                                <h5 class="fw-bold">Engineering escalation support</h5>
+                                <p class="mb-0">Utilize another conduit to drive issue resolution with Microsoft support
+                                </p>
+                            </div>
+                            <div class="col-md-6 px-0">
+                                <img src="images/corner-arrow-img.png" style="height: 60px; width: 60px;" class="mb-3"
+                                    alt="photo-img" />
+                                <h5 class="fw-bold">Migration planning</h5>
+                                <p class="mb-0">Execute on your migration vision by building a business case, deciding
+                                    on
+                                    your migration
+                                    strategies, and tracking success</p>
+                            </div>
+                            <div class="col-md-6 px-0">
+                                <img src="images/path-arrow-img.png" style="height: 60px; width: 60px;" class="mb-3"
+                                    alt="video-img" />
+                                <h5 class="fw-bold">Migration tooling</h5>
+                                <p class="mb-0">Utilize Azure native tooling like Azure Migrate or 3rd party solutions
+                                    to
+                                    get you
+                                    running quickly</p>
+                            </div>
+                            <div class="col-md-6 px-0">
+                                <img src="images/peep-img.png" style="height: 60px; width: 60px;" class="mb-3"
+                                    alt="photo-img" />
+                                <h5 class="fw-bold">Migration partners</h5>
+                                <p class="mb-0">Accelerate your move to Azure and be prepared for what's next when you
+                                    need
+                                    that extra
+                                    assistance</p>
+                            </div>
+                        </div>
+                    </div>
                 </div>
             </div>
         </div>
     </section>
 
     <section id="options-to-move mt-3 mb-3" style="background-color: #E6E6E6;">
-        <h3 class="text-center px-4 px-md-3 py-5 fw-bold">Options to move to Azure for End of Support workloads</h3>
+        <h3 class="text-center px-4 px-md-3 py-5 fw-bold">For End of Support, meet your customers where they're at</h3>
         <div class="container">
             <div class="row justify-content-center pb-5">
-                <div class="col-md-4 mx-md-3 mx-xxl-5 px-5 px-md-1 mb-5"
+                <div class="col-md-4 mx-md-3 mx-xxl-5 px-5 px-md-1 mb-1"
                     style="background-color: #E6E6E6; width: 21rem;">
                     <img src="images/azure-solutions-grow.png" style="width: 100%;" alt="azure-solutions-img" />
-                    <h6 class="mt-3 mb-3 fw-bold ">Modernize on Azure</h6>
+                    <h5 class="mt-3 mb-3 fw-bold ">Modernize and unlock new capabilities</h5>
                     <p>
                         Modernize with Azure App Service and Azure SQL Managed Instance to avoid end of support
                         and always stay up-to-date. Upgrade your OS version and offload management tasks to
                         focus on delivering innovative apps and customer experiences
                     </p>
                 </div>
-                <div class="col-md-4 mx-md-3 mx-xxl-5 px-5 px-md-1 mb-5"
+                <div class="col-md-4 mx-md-3 mx-xxl-5 px-5 px-md-1 mb-1"
                     style="background-color: #E6E6E6; width: 21rem;">
                     <img src="images/mens-img.png" style="width: 100%;" alt="men-img" />
-                    <h6 class="mt-3 mb-3 fw-bold ">Migrate to Azure</h6>
+                    <h5 class="mt-3 mb-3 fw-bold ">Get free extended ESUs with hybrid</h5>
                     <p>
                         Get free Extended Security Updates for three years after end of support in Azure, which
                         includes destinations such as Azure Stack HCI and Azure VMware Solution to migrate on
                         your own terms. Combine this with Azure Hybrid Benefit to save big on Azure
                     </p>
                 </div>
-                <div class="col-md-4 mx-md-3 mx-xxl-5 px-5 px-md-1 mb-5"
+                <div class="col-md-4 mx-md-3 mx-xxl-5 px-5 px-md-1 mb-1"
                     style="background-color: #E6E6E6; width: 21rem;">
                     <img src="images/men-women-img.png" style="width: 100%;" alt="men-women-img" />
-                    <h6 class="mt-3 mb-3 fw-bold ">Deploy ESUs enabled by Azure Arc</h6>
+                    <h5 class="mt-3 mb-3 fw-bold ">Purchase ESUs</h5>
                     <p>
                         Purchase Extended Security Updates enabled by Azure Arc for seamless and automated
                         patching. Get more flexibility with a pay-as-you-go model and extend Azure operations
                         and management to hybrid and multicloud environments
                     </p>
                 </div>
+                <div class="container">
+                    <div class="row justify-content-center">
+                        <div class="col-md-2">
+                            <button class="watch-btn text-white mx-3">Learn More</button>
+                        </div>
+                    </div>
+                </div>
             </div>
         </div>
     </section>
 
-
     <section id="unlock-value1" class="mb-5">
         <h3 class="mt-5 text-center fw-bold px-4 mb-5">See how partners are unlocking value with the DCO program</h3>
+        <div class="container">
+            <ul class="nav justify-content-evenly align-items-center at-logo-link my-4 mx-5">
+                <li class="nav-item">
+                    <a class="nav-link" aria-current="page" href="#"><img src="images/logo_atmosera1.png"
+                            style="width: 14rem;" alt="atmosera1-img"></a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#"><img src="images/logo_atmosera2.png" style="width: 14rem;"
+                            alt="atmosera2-img"></a>
+                </li>
+            </ul>
+        </div>
         <div class="container">
             <div class="row justify-content-center mx-md-4">
                 <div class="col-md-6" style="background-color: #F4F5F6;">
@@ -369,12 +490,95 @@
         <div class="container p-4">
             <div class="row mx-sm-2 mx-md-5">
                 <div class="col-md-9">
-                    <h4 class="text-white mt-2">Ready to transform with the DCO program?</h4>
+                    <h4 class="text-white mt-2">Ready to accelerate with the DCO team?</h4>
                 </div>
                 <div class="col-md-3">
                     <button class="mt-md-0 mt-3">
                         Sign up today
                     </button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="footer" style="background-color: #F4F5F6;">
+        <div class="container my-5 pt-4">
+            <div class="row align-items-center pt-5 pb-4 mx-3 mx-md-0">
+                <div class="col-md-3 d-flex py-3" style="background-color: #EAEBEC;">
+                    <img src="images/azure-logo.png" style="width: 24px; height: 24px;" alt="azure-logo"></a>
+                    <a href="#">
+                        <p class="my-0 mx-2" style="color: 
+                    #4C4C51; font-size: 0.9rem;">Get the Azure mobile app</p>
+                    </a>
+                </div>
+                <div class="col-md-3 mt-4 mt-md-0 px-0 mx-md-4">
+                    <img src="images/twitter-blk.png" class="mx-2" style="width: 24px; height: 28px;"
+                        alt="twitter-blk-img"></a>
+                    <a href="#"><img src="images/instagram-blk.png" class="mx-2" style="width: 24px; height: 28px;"
+                            alt="instagram-blk-img"></a>
+                    <a href="#"><img src="images/linkedin-blk.png" class="mx-2" style="width: 24px; height: 28px;"
+                            alt="linkedin-blk-img"></a>
+                    <a href="#"><img src="images/youtube-blk.png" class="mx-2" style="width: 24px; height: 28px;"
+                            alt="youtube-blk-img"></a>
+                </div>
+            </div>
+
+            <div class="row mt-2" style="font-size: 0.8rem;">
+                <div class="col-md-2 mx-4 mx-md-0">
+                    <p class="mt-1" style="font-size: 0.9rem;"><a href="#" class="fw-bold">Explore Azure</a></p>
+                    <p><a href="#">What is Azure?</a></p>
+                    <p><a href="#">Get started</a></p>
+                    <p><a href="#">Global infrastructure</a></p>
+                    <p><a href="#">Datacenter regions</a></p>
+                    <p><a href="#">Trust your cloud</a></p>
+                    <p><a href="#">Customer enablement</a></p>
+                    <p><a href="#">Customer stories</a></p>
+                </div>
+                <div class="col-md-2 mx-4 mx-md-0">
+                    <p class="mt-1" style="font-size: 0.9rem;"><a href="#" class="fw-bold">Products and pricing</a></p>
+                    <p><a href="#">Products</a></p>
+                    <p><a href="#">Pricing</a></p>
+                    <p><a href="#">Free Azure services</a></p>
+                    <p><a href="#">Flexible purchase options</a></p>
+                    <p><a href="#">Cloud economics</a></p>
+                    <p><a href="#">Optimize your costs</a></p>
+                </div>
+                <div class="col-md-2 mx-4 mx-md-0">
+                    <p class="mt-1" style="font-size: 0.9rem;"><a href="#" class="fw-bold">Solutions and support</a></p>
+                    <p><a href="#">Solutions</a></p>
+                    <p><a href="#">Resources for accelerating growth</a></p>
+                    <p><a href="#">Solution architectures</a></p>
+                    <p><a href="#">Flexible purchase options</a></p>
+                    <p><a href="#">Support</a></p>
+                    <p><a href="#">Azure demo and live Q&A</a></p>
+                </div>
+                <div class="col-md-2 mx-4 mx-md-0">
+                    <p class="mt-1" style="font-size: 0.9rem;"><a href="#" class="fw-bold">Partners</a></p>
+                    <p><a href="#">Azure Marketplace</a></p>
+                    <p><a href="#">Find a partner</a></p>
+                    <p><a href="#">Technology partners</a></p>
+                </div>
+                <div class="col-md-2 mx-4 mx-md-0">
+                    <p class="mt-1" style="font-size: 0.9rem;"><a href="#" class="fw-bold">Resources</a></p>
+                    <p><a href="#">Training and certifications</a></p>
+                    <p><a href="#">Documentation</a></p>
+                    <p><a href="#">Blog</a></p>
+                    <p><a href="#">Developer resources</a></p>
+                    <p><a href="#">Students</a></p>
+                    <p><a href="#">Events and webinars</a></p>
+                    <p><a href="#">Analyst reports, white papers, and e-books</a></p>
+                    <p><a href="#">Videos</a></p>
+                </div>
+                <div class="col-md-2 mx-4 mx-md-0">
+                    <p class="mt-1" style="font-size: 0.9rem;"><a href="#" class="fw-bold">Cloud computing</a></p>
+                    <p><a href="#">What is cloud computing?</a></p>
+                    <p><a href="#">What is cloud migration?</a></p>
+                    <p><a href="#">What is a hybrid cloud?</a></p>
+                    <p><a href="#">What is AI?</a></p>
+                    <p><a href="#">What is IaaS?</a></p>
+                    <p><a href="#">What is SaaS?</a></p>
+                    <p><a href="#">What is PaaS?</a></p>
+                    <p><a href="#">What is DevOps?</a></p>
                 </div>
             </div>
         </div>
