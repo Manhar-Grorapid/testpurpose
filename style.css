@@ -11,6 +11,7 @@ body {
 .customer-acq-tab .active {
     font-weight: bold;
     color: #000000;
+    border-bottom: 5px solid #0067B8;
 }
 
 
@@ -30,11 +31,12 @@ body {
     text-decoration: none;
 }
 
-#transform .container .row .col-md-3 button {
-    background-color: #89C402;
-    padding: 0.5rem 1rem;
-    border: 0;
-    color: #000000;
+.fl-gr {
+    filter: grayscale(100%);
+}
+
+.active .fl-gr {
+    filter: none;
 }
 
 .watch-btn {
@@ -119,4 +121,13 @@ body {
 
 #footer p {
     width: 80%;
+}
+
+#language-select {
+    cursor: pointer;
+}
+
+#language-select option{
+    cursor: pointer;
+
 }
