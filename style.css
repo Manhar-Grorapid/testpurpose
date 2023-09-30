@@ -11,7 +11,7 @@ body {
 .customer-acq-tab .active {
     font-weight: bold;
     color: #000000;
-    border-bottom: 2px solid #0067B8;
+    /* border-bottom: 2px solid #0067B8; */
 }
 
 
@@ -21,7 +21,7 @@ body {
 }
 
 .acq-cust:hover {
-    border-bottom: 2px solid #0067B8;
+    /* border-bottom: 2px solid #0067B8; */
     border-radius: 4px;
     color: #000000;
     transition: 0.2s;
@@ -133,4 +133,8 @@ body {
 
 #footer a:hover {
     text-decoration: underline;
+}
+
+#footer select option {
+    font-size: 0.8rem;
 }
