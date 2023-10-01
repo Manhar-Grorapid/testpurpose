@@ -138,3 +138,7 @@ body {
 #footer select option {
     font-size: 0.8rem;
 }
+
+.lis-brac li::before {
+    content: ") ";
+}
