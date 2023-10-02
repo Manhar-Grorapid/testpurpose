@@ -111,7 +111,7 @@ body {
 
 .nav-link:active,
 .nav-link:focus {
-    border-bottom: 4px solid #0067b8;
+    border-bottom: 4px solid #0078D4;
 }
 
 #footer a {
@@ -127,7 +127,7 @@ body {
     cursor: pointer;
 }
 
-#language-select option{
+#language-select option {
     cursor: pointer;
 }
 
@@ -141,4 +141,38 @@ body {
 
 .lis-brac li::before {
     content: ") ";
+}
+
+.accordion-button .custom-icon {
+    font-size: 18px;
+    transition: transform 0.3s;
+    display: inline-block;
+    margin-right: 10px;
+}
+
+.accordion-button[aria-expanded="true"] .custom-icon {
+    transform: rotate(90deg);
+}
+
+.accordion-button::after {
+    content: none;
+}
+
+.accordion-button {
+    display: flex;
+    align-items: center;
+}
+
+.accordion-button:not(.collapsed) {
+    background-color: transparent !important;
+    color: inherit;
+}
+
+button.accordion-button:focus {
+    box-shadow: 0 0 15px lightgray;
+}
+
+.accordion-item {
+    border-left: none;
+    border-right: none;
 }
