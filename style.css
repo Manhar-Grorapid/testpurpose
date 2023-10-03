@@ -176,3 +176,11 @@ button.accordion-button:focus {
     border-left: none;
     border-right: none;
 }
+
+.blog-dbreadcrumb a {
+    text-decoration: none;
+}
+
+.blog-dbreadcrumb a:hover {
+    text-decoration: underline;
+}
