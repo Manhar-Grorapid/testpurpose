@@ -106,129 +106,98 @@
                         Your customers have three options to choose from when evaluating the best path forward for
                         securing their legacy End of Support workloads:<br />
                     <ol class="lis-brac">
-                        <li>Modernize to Azure – customers can modernize WS2012 workloads to Azure App Service and
-                            always stay up-to-date, with no need for End of Support updates</li>
-                        <li>Migrate to cloud or hybrid – move server workloads to Azure Virtual machines, Azure Stack
-                            HCI
-                            or Azure VMware Solution and get three years of Extended Security Updates at no cost;
-                            combine with Azure Hybrid Benefit for even more savings</li>
-                        <li><span class="fw-bold">Deploy ESUs with Azure Arc</span> – Customers can now purchase
-                            Extended Security Updates directly
-                            through Azure portal by Arc-enabling their WS2012 servers.</li>
+                        <li><span class="fw-bold">Move to Azure and unlock new capabilities:</span> You can securely
+                            migrate the infrastructure and databases to Azure or modernize on premises with options such
+                            as Azure Arc-enabled SQL Server and Azure Arc-enabled SQL Managed Instance.</li>
+                        <li><span class="fw-bold">Go Hybrid and get free extended ESU for three years after end of
+                                support:</span> This includes
+                            hybrid destinations like Azure Stack HCI and Azure VMWare Solution (AVS) to give flexibility
+                            to customers.</li>
+                        <li><span class="fw-bold">Deploy ESUs with Azure Arc:</span> Purchase Extended Security Updates
+                            directly through the Azure portal by Arc-enabling their WS2012 servers.</li>
                     </ol>
                     </p>
-                    <img src="images/blog1-img.png" alt="blog1-img" class="my-4 img-fluid">
+                    <img src="images/blog1.png" alt="blog1-img" class="my-4 img-fluid">
                     <p class="mt-3">
-                        Let’s dive a bit into the newest option available with Azure Arc. Onboarding legacy WS2012
-                        servers with
-                        Azure Arc unlocks the ability for customers to purchase ESU directly through Azure portal and as
-                        part of
-                        their Azure subscription. This provides a flexible billing mechanism that charges for ESUs only
-                        when in
-                        use. The Azure portal also offers a convenient mechanism for purchasing and managing the ESU
-                        license.
-                        Subscription-based billing means customers only pay for what they need, when they
-                        need.<br /><br />
-                        Azure Arc acts like a bridge to extend the Azure platform to secure, view, organize, and govern
-                        IT
-                        inventory anywhere. With Azure Arc, customers will have clear visilbity to the entire IT estate,
-                        and make
-                        intelligent decisions about which servers require ESU. Once ESUs are purchased through the Azure
-                        portal, they can be directly assigned to server workloads in the same interface. On top of that,
-                        patches
-                        for these servers are also delivered through Azure so everything necessary for managing ESUs can
-                        be
-                        done through the portal.
+                        Let's take a closer look at the latest option that Azure Arc has brought to the table. When you
+                        onboard legacy Windows Server 2012 with Azure Arc, it opens a world of possibilities.
+                        Specifically, it empowers you to offer Extended Security Updates (ESUs) directly through the
+                        Azure portal, utilizing your customers' Azure subscriptions as the conduit.<br /><br />
+                        This approach introduces a flexible billing mechanism, where ESUs are billed on a monthly basis.
+                        It's worth highlighting that when a partner deploys ESUs, the billing takes into account the
+                        release date of the ESU. For instance, if ESUs are deployed in December, the customer will still
+                        be billed for October and November, aligning with the ESU release timeline.<br /><br />
+                        The ESU opportunity creates additional opportunities for our hosting partners. For the first
+                        time, SPLA licenses are eligible for ESUs, offering your customers the chance to extend their
+                        upgrade timeline. It also sets the stage for a host of new opportunities. With Azure Arc
+                        infrastructure deployed and a CSP
+                        relationship established, you can provide your customers with a broader range of services and
+                        solutions, all within the Azure ecosystem. This transition not only enhances your service
+                        offerings but also strengthens your position as a trusted partner for your customers' evolving
+                        needs. It’s also worth mentioning that if you’re managing infrastructure on AWS or GCP, you can
+                        use the same Azure Arc deployment to provide ESU’s and additional services to those customers as
+                        well.
                     </p>
-                    <img src="images/blog2-img.png" alt="blog2-img" class="my-4 img-fluid">
-                    <p class="mt-3">Extended Security Updates can be purchased for both Windows Server 2012 and SQL
-                        Server 2012. To
+                    <p class="fw-bold">What is Azure Arc?</p>
+                    <p>Azure Arc acts like a bridge to extend the Azure platform to secure, view, organize,
+                        and govern IT inventory anywhere. With Azure Arc, your customers will have clear visibility to
+                        the entire IT estate, and make intelligent decisions about which servers require ESU. Once ESUs
+                        are purchased through the Azure portal, they can be directly assigned to server workloads in the
+                        same interface. On top of that, patches for these servers are also delivered through Azure so
+                        everything necessary for managing ESUs can be done through the portal.</p>
+                    <img src="images/blog2.png" alt="blog2-img" class="my-4 img-fluid">
+                    <p class="fw-bold">Arc offers the potential of management, governance, and security</p>
+                    <p>
+                        Azure Arc offers much more than just ESU updates. With Arc, customers can also bring the power
+                        of Azure cloud tools to their on-premises servers. Azure Arc provides capabilities like support
+                        for Azure Monitor, Update Management, Guest Configuration, and many other tools for managing
+                        hybrid server workloads. Customers who onboard their on-premises/hybrid workloads with Azure Arc
+                        get single-pane-of-glass management and governance with a common toolset in a single pane of
+                        glass.<br /><br />
+                        Azure Arc also makes it simple to protect and secure their on-prem/hybrid servers using tools
+                        like Microsoft Defender for Servers and Azure Sentinel. With Azure Arc, Defender can be deployed
+                        as an extension to an Arc-enabled server. Once deployed, customers get vulnerability assessment,
+                        Just-in-time access, malware protection, and other tools to protect server workloads. Defender
+                        also provides a robust set of compliance controls and a Compliance Dashboard to help customers
+                        with industry and regulatory compliance requirements.
+                    </p>
+                    <img src="images/blog3.png" alt="blog3-img" class="my-4 img-fluid">
+                    <p class="mt-3 fw-bold">How to purchase ESUs?</p>
+                    <p>Extended Security Updates can be purchased for both Windows Server 2012 and SQL Server 2012. To
                         purchase and configure ESU for Windows Server 2012 it only takes a few simple steps:</p>
                     <ol class="lis-brac">
                         <li>Access Azure Arc through the Azure portal</li>
-                        <li>Onboard your servers to Azure Arc by deploying the Azure Connected Machine Agent</li>
-                        <li>View your complete server inventory and determine which servers will need ESU</li>
-                        <li>Purchase and activate the ESU and apply to your servers. ESUs can also be deployed through
+                        <li>Onboard your customers’ servers to Azure Arc by deploying the Azure Connected Machine Agent
+                        </li>
+                        <li>View their complete server inventory and determine which servers will need ESU</li>
+                        <li>Purchase and activate the ESU and apply to their servers. ESUs can also be deployed through
                             Azure Policy.</li>
                     </ol>
-                    <img src="images/blog3-img.png" alt="blog3-img" class="my-4 img-fluid">
-                    <p class="mt-3">The process for deploying SQL Server ESU is similar and also done through Azure
-                        portal:</p>
+                    <img src="images/blog4.png" alt="blog4-img" class="my-4 img-fluid">
+                    <p>The process for deploying SQL Server ESU is similar and can also completed through Azure portal:
+                    </p>
                     <ol class="lis-brac">
-                        <li>Open Azure portal and onboard your SQL Servers</li>
-                        <li>View your entire SQL Server inventory and determine which servers you want to apply ESU</li>
+                        <li>Open Azure portal and onboard SQL Servers</li>
+                        <li>View your customers’ entire SQL Server inventory and determine which servers you want to
+                            apply ESU</li>
                         <li>Select the SQL Server where you wish to configure ESU</li>
                         <li>Subscribe to ESU and configure how patches will be delivered</li>
                     </ol>
-                    <img src="images/blog4-img.png" alt="blog4-img" class="my-4 img-fluid">
-                    <p class="mt-3">
-                        Azure Arc offers much more than just ESU updates. With Arc, customers can also bring the power
-                        of
-                        Azure cloud tools to their on-premises servers. Azure Arc provides capabilities like support for
-                        Azure
-                        Monitor, Update Management, guest configuration, and many other tools for managing hybrid server
-                        workloads. Customers who onboard their on-premises/hybrid workloads with Azure Arc get
-                        single-pane-
-                        of-glass management and governance with a common toolset in a single pane of glass.<br /><br />
-                        Azure Arc also makes it simple to protect and secure their on-prem/hybrid servers using tools
-                        like
-                        Microsoft Defender for Servers and Azure Sentinel. With Azure Arc, Defender can be deployed as
-                        an
-                        extension to an Arc-enabled server. Once deployed, customers get vulnerability assessment,
-                        Just-in-time
-                        access, malware protection, and other tools to protect server workloads. Defender also provides
-                        a
-                        robust set of compliance controls and a Compliance Dashboard to help customers with industry and
-                        regulatory compliance requirements.
-                    </p>
-                    <img src="images/blog5-img.png" alt="blog5-img" class="my-4 img-fluid">
-                    <p class="mt-3">Are you ready to explore how Azure Arc can help with managing your legacy Windows
-                        and SQL server
-                        workloads, keeping you secure and compliant?</p>
-                    <h6 class="fw-bold my-3">Learn more:</h6>
+                    <img src="images/blog5.png" alt="blog5-img" class="my-4 img-fluid">
+                    <p>Are you ready to explore how Azure Arc can help with managing your customers’ legacy Windows and
+                        SQL server workloads, keeping them secure and compliant?</p>
+                    <p class="fw-bold">Learn more:</p>
                     <p><a href="https://learn.microsoft.com/en-us/lifecycle/faq/extended-security-updates">Product
                             Lifecycle FAQ - Extended Security Updates | Microsoft Learn</a></p>
                     <p><a
                             href="https://learn.microsoft.com/en-us/windows-server/get-started/extended-security-updates-overview">Overview
-                            of Extended Security Updates for Windows Server 2008, 2008 R2, 2012, and 2012 R2 |
+                            of Extended Security Updates for Windows Server 2008, 2008 R2, 2012, and
+                            2012 R2 |
                             Microsoft Learn</a></p>
                     <p><a
                             href="https://learn.microsoft.com/en-us/windows-server/get-started/extended-security-updates-deploy">How
-                            to get Extended Security Updates (ESU) for Windows Server 2008, 2008 R2, 2012, and 2012 R2 |
-                            Microsoft Learn
-                            Structure:</a></p>
-                    <ol type="1">
-                        <li>End of Support Customer Trigger</li>
-                        <li>Overall options: modernize, migrate, OR deploy ESUs Enabled by Azure Arc</li>
-                        <li>Let’s start with option 3 -&gt; Purchase Extended Security Updates enabled by Azure Arc for
-                            seamless and automated patching. Get more flexibility with a pay-as-you-go model and extend
-                            Azure operations and management to hybrid and multicloud environments
-                            <ol type="a">
-                                <li>Benefits:
-                                    <ol type="i">
-                                        <li>Flexible, monthly billing model centralized in Azure</li>
-                                        <li>Purchase Extended Security Updates enabled by Azure Arc for seamless and
-                                            automated patching</li>
-                                        <li>Extend Azure operations and management to hybrid and multicloud
-                                            environments</li>
-                                    </ol>
-                                </li>
-                            </ol>
-                        </li>
-                        <li>Option 2: Arc - Get free Extended Security Updates for three years after end of support in
-                            Azure,
-                            which includes destinations such as Azure Stack HCI and Azure VMware Solution to migrate on
-                            your own terms. Combine this with Azure Hybrid Benefit to save big on Azure</li>
-                        <li>Server EOS lifecycle and support timeline</li>
-                        <li>Simplicity: it’s super easy to activate:
-                            <ol type="a">
-                                <li>Provide guidance for Windows Server ESU</li>
-                                <li>Provide guidance for SQL Server ESU</li>
-                            </ol>
-                        </li>
-                        <li>Upsell: Defender: getting telemetry on the customer environment for compliance</li>
-                        <li>Next steps</li>
-                    </ol>
+                            to get Extended Security Updates (ESU) for Windows Server 2008, 2008 R2, 2012, and
+                            2012 R2 | Microsoft Learn</a></p>
                 </div>
             </div>
         </div>
