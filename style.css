@@ -184,3 +184,8 @@ button.accordion-button:focus {
 .blog-dbreadcrumb a:hover {
     text-decoration: underline;
 }
+.column-img {
+    max-height: 250px;
+    width: 100%;
+    object-fit: cover;
+}
